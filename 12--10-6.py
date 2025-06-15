@@ -1,0 +1,16 @@
+import cv2
+
+img=cv2.imread("D:\\7040\\rainbow.jpg")
+V,I,B,G,Y,O,R=cv2.split(img)
+cv2.imshow("Original Image",img)
+#cv2.waitKey(0)
+cv2.imshow("Violet  image",V)
+#cv2.waitKey(0)
+cv2.imshow("Indigo ",I)
+#cv2.waitKey(0)
+cv2.imshow("Blue channel",B)
+cv2.imshow("Green channel",G)
+cv2.imshow("yellow channel",Y)
+cv2.imshow("orange channel",O)
+cv2.imshow("Red channel",R)
+Cv2.waitKey(0)
