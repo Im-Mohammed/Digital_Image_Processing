@@ -1,0 +1,12 @@
+import cv2
+img=cv2.imread("A:\\Apps\\anaconda\\spyder\\DIP lab preparation\\sunflower.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+gaub=cv2.GaussianBlur(gray,(5,5),5)
+sob1=cv2.Sobel(gray,cv2.CV_64F,1,0,5)
+lap=cv2.Laplacian(gray,cv2.CV_64F)
+cv2.imshow("Ori",img)
+cv2.imshow("Gray",gray)
+cv2.imshow("Sobel Operator",sob1)
+cv2.imshow("Laplacian ",lap)
+cv2.waitKey()
+cv2.destroyAllWindows()
