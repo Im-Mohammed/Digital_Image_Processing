@@ -1,0 +1,16 @@
+import cv2
+import matplotlib.pyplot as plt
+img=cv2.imread("A:\\Apps\\anaconda\\spyder\\DIP lab preparation\\sunflower.jpg")
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+ret,th1=cv2.threshold(gray,120,255,cv2.THRESH_BINARY)
+ret,th2=cv2.threshold(gray,120,255,cv2.THRESH_BINARY_INV)
+ret,th3=cv2.threshold(gray,120,255,cv2.THRESH_TOZERO)
+ret,th4=cv2.threshold(gray,120,255,cv2.THRESH_TOZERO_INV)
+ret,th5=cv2.threshold(gray,120,255,cv2.THRESH_TRUNC)
+plt.subplot(331),plt.imshow(img),plt.title("Color Image"),plt.axis('off')
+plt.subplot(332),plt.imshow(gray,cmap='gray'),plt.title("Gray Image"),plt.axis('off')
+plt.subplot(333),plt.imshow(th1,cmap='gray'),plt.title("Binary Inmage 1 "),plt.axis('off')
+plt.subplot(334),plt.imshow(th2,cmap='gray'),plt.title("Binary Inmage 2 "),plt.axis('off')
+plt.subplot(335),plt.imshow(th3,cmap='gray'),plt.title("Binary Inmage 3 "),plt.axis('off')
+plt.subplot(336),plt.imshow(th4,cmap='gray'),plt.title("Binary Inmage 4"),plt.axis('off')
