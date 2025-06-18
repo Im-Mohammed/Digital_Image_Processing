@@ -1,0 +1,36 @@
+import cv2
+import matplotlib.pyplot as plt
+img=cv2.imread("A:\\Apps\\anaconda\\spyder\\DIP lab preparation\\sunflower.jpg")
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+plt.subplot(221),plt.imshow(img),plt.title("Color Image"),plt.axis('off')
+plt.subplot(222),plt.imshow(hsv),plt.title("hsv Image"),plt.axis('off')
+
+#Blurring
+im1=cv2.imread("A:\\Apps\\anaconda\\spyder\\DIP lab preparation\\sunflower.jpg")
+im1=cv2.cvtColor(im1,cv2.COLOR_BGR2RGB)
+bl1=cv2.blur(im1,(10,10))
+bl2=cv2.blur(im1,(15,15))
+bl3=cv2.blur(im1,(20,20))
+plt.subplot(221),plt.imshow(im1),plt.title("Original Image"),plt.axis('off')
+plt.subplot(222),plt.imshow(bl1),plt.title("1 blur Image"),plt.axis('off')
+plt.subplot(223),plt.imshow(bl2),plt.title("2 blur Image"),plt.axis('off')
+plt.subplot(224),plt.imshow(bl3),plt.title("3 Blur Image"),plt.axis('off')
+#Gaussian Blur
+im2=cv2.imread("A:\\Apps\\anaconda\\spyder\\DIP lab preparation\\sunflower.jpg")
+#im2=cv2.cvtColor(im2,cv2.COLOR_BGR2RGB)
+gb1=cv2.GaussianBlur(im2,(5,5),5)
+cv2.imshow("Original image", im2)
+cv2.imshow("Gaussian Blur ",gb1)
+cv2.waitKey()
+cv2.destroyAllWindows()
+#Combination of blur{averaging},Median Blur,Gaussian Blur
+i1=cv2.imread("A:\\Apps\\anaconda\\spyder\\DIP lab preparation\\sunflower.jpg")
+i1=cv2.cvtColor(i1,cv2.COLOR_BGR2RGB)
+b1=cv2.blur(i1,(10,10))
+gb1=cv2.GaussianBlur(i1,(15,15),5)
+mb=cv2.medianBlur(i1,5)
+plt.subplot(221),plt.imshow(i1),plt.title("Original Image"),plt.axis('off')
+plt.subplot(222),plt.imshow(b1),plt.title("Blurring"),plt.axis('off')
+plt.subplot(223),plt.imshow(gb1),plt.title("Gaussian Blurring"),plt.axis('off')
+plt.subplot(224),plt.imshow(mb),plt.title("Median Blurring"),plt.axis('off')
