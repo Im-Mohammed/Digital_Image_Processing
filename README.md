@@ -74,5 +74,3 @@ This repo is part of my journey in mastering **computer vision** — feel free t
 
 * Give the repo a ⭐️
 * Fork it and try your own experiments
-
----
