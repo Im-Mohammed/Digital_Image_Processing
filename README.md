@@ -79,6 +79,3 @@ This repo is part of my journey in mastering **computer vision** — feel free t
 
 Thank you for visiting!
 Happy coding & happy visualizing 🎨✨
-
-```
-
