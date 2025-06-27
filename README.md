@@ -65,9 +65,6 @@ Make sure the relevant image files are in the same folder.
 
 Hi, I'm **Mohammed** 👋
 An enthusiastic learner passionate about AI, Data Science, and building real-world applications that make tech easier to understand.
-
-This repo is part of my journey in mastering **computer vision** — feel free to explore, learn, and suggest improvements!
-
 ---
 
 ## ⭐️ If You Like This
