@@ -57,17 +57,16 @@ Pick any script and run it:
 python "Sobel Operator.py"
 ```
 
-Make sure the relevant image files are in the same folder.
-
----
-
 ## 🙋‍♂️ About Me
 
-Hi, I'm **Mohammed** 👋
--An enthusiastic learner passionate about AI, Data Science, and building real-world applications that make tech easier to understand.
+Hi, I'm **Mohammed** 👋  
+An enthusiastic learner passionate about AI, Data Science, and building real-world applications that make tech easier to understand.
+
+I'm always exploring new ways to simplify complex ideas and make them accessible to everyone — whether that's through clean code, detailed walkthroughs, or interactive demos.
+
 ---
 
-## ⭐️ If You Like This
+## 🤝 Let's Connect or Collaborate
 
-* Give the repo a ⭐️
-* Fork it and try your own experiments
+Have ideas, suggestions, or improvements?  
+Feel free to open an issue or start a discussion — I’d love to hear from you!
