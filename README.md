@@ -64,6 +64,8 @@ Make sure the relevant image files are in the same folder.
 ## 🙋‍♂️ About Me
 
 Hi, I'm **Mohammed** 👋
+
+
 An enthusiastic learner passionate about AI, Data Science, and building real-world applications that make tech easier to understand.
 ---
 
