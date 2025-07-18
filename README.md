@@ -66,7 +66,4 @@ I'm always exploring new ways to simplify complex ideas and make them accessible
 
 ---
 
-## 🤝 Let's Connect or Collaborate
 
-Have ideas, suggestions, or improvements?  
-Feel free to open an issue or start a discussion — I’d love to hear from you!
